@@ -11,7 +11,7 @@ public class ElementoDefensorConverter implements AttributeConverter<ElementoDef
 
   @Override
   public String convertToDatabaseColumn(ElementoDefensor elementoDefensor) {
-    return ElementoDefensor.class.getSimpleName();
+    return elementoDefensor.getClass().getSimpleName();
 
   }
   @Override
